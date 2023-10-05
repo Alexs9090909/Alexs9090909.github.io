@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BIM</title> <!-- REMPLACER -->
+    <link href="style.css" rel="stylesheet" />
+    <script src="handlebars.min.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template"> 
+
+      <nav>
+        <a href="./home.html">Home</a>
+        <a href="./index_projets.html">Projets</a>
+        <a href="./bim.html">BIM</a>
+        <a href="./contact.html">Contact</a> 
+      </nav>
+
+      {{#each bim}} <!-- REMPLACER -->
+
+        <header>
+          <h1>{{this.shortName}}</h1>
+        </header>
+
+        <br>
+
+        <main>
+          <section class='illustration'>
+            <img src="{{this.image_00}}">
+          </section>
+
+        <br> 
+        <br>
+
+      <section class='description'>
+        {{#each this.description}}
+          <p>{{this}}</p>
+          <br>
+        {{/each}}
+      </section>
+          
+      <div class="taches">
+        
+          <p style="text-decoration: underline;"> Mise en place des maquettes BIM :</p>
+            <ul>
+              <li>Mise en place et entretien de la maquette</li>
+              <li>Etablissement de la stratégie générale de conception selon les besoins et contraintes du projet</li>
+              <li>Géoréférencement de la maquette à partir des plans de géomètre</li>
+              <li>Réalisation de la topographie environnante à partir des plans de géomètre</li>
+              <li>Réalisation et organisation de l'arborescence projet, des palettes de gabarits, de vues et de feuilles.</li>
+              <li>Mise en place des éléments de référence (quadrillages, niveaux...)</li>
+              <li>Préparamétrage des exports permettant l'export de l'ensemble des livrables ordonnés et nomenclaturés ""en un clic""</li>
+              <li>Lorsque nécessaire, mise en place d'une structuration BIM en division tripartite pour les projets de grandes tailles :</li>
+                <ul>
+                <li>Maquette hôte ("main") accueillant les maquettes de bâtiment en lien Revit et regroupant les livrables finaux compilés</li>
+                <li>Maquettes de bâtiment, accueillant les modélisations de projets</li>
+                <li>Maquette container, accueillant les liens externes : documents 2D (dwg, pdf...) ou 3D (rvt, ifc...)</li>
+                </ul>
+            </ul>
+            <br>
+            <br>
+
+            <p style="text-decoration: underline;">Réalisation des bibliothèques de familles BIM :</p>
+            <ul>
+            <li>Réalisation des familles paramétriques modulaires 3D relatives à la conception architecturale :</li> 
+              <ul>
+              <li>Familles de fenêtres </li>
+              <li>amilles de portes</li>
+              <li>Familles de mobiliers</li>
+              <li>Familles de fenêtres</li>
+              <li>Familles de murs rideaux</li>
+              <li>Familles d'escaliers</li>
+              <li>Familles de garde-corps</li>
+              <li>Murs et sols multicouches</li>
+              <li>Ensemble des familles de modèle (lignes 3D, équipements techniques...)</li>
+              </ul>
+              <br>
+            <li>Réalisation des familles paramétriques modulaires 2D relatives à la production de projet : </li>
+              <ul>
+              <li>Familles de cartouches</li>
+              <li>Familles de cote</li>
+              <li>Familles d'étiquesttes (de pièces, de fenêtres...)</li>
+              <li>Ensemble des familles d'annotation (notex textuelles, légendes, zones de pochages, lignes de détail, personnages, végétations...)</li>
+              </ul>
+              <br>
+            </ul>
+        
+            <p style="text-decoration: underline;">Montage et paramétrage des nomenclatures :<p>
+            <ul>
+            <li>Réalisation des nomenclatures dynamiques pour les surfaces administratives et réglementaires (SDP, SU, SHAB)</li>
+            <li>Mise en place de nomenclature de clés pour le pré-paramétrage des pièces</li>
+            <li>Réalisation des nomenclatures dynamiques de fenêtres</li>
+            <li>Réalisation des nomenclatures dynamiques de quantitatif matériaux</li>
+            <li>Réalisation des nomenclatures dynamiques de livrables (liste des pièces)</li>
+            </ul>
+            <br>
+        
+            <p style="text-decoration: underline;">Coordination :</p>
+            <ul>
+            <li>Mise en place de chartes BIM de bonnes pratiques avec les architectes associés et autres partenaires de MOE, afin d'assurer la bonne collaboration et le bon fonctionnement des maquettes partagées ainsi que  l'homogénéité de rendu.</li>
+            </ul>
+            <br>
+
+        
+            <p style="text-decoration: underline;">Dynamo :</p>
+            <ul>
+            <li>Réalisation d'un script dynamo en codage graphique pour le calcul et l'affichage des surfaces habitables (SHAB) totales de chaque appartement avec l'outil pièce.</li>
+            </ul>
+            <br>
+
+            <p style="text-decoration: underline;">Enscape :</p>
+            <ul>
+            <li>Réalisation de perspectives internes avec le moteur de rendu Enscape.</li>
+            </ul>
+            <br>
+      </div>
+          
+      <br>
+          
+      <section class='galerie'> 
+        {{#if image_01}} <img src="{{this.image_01}}" width="600"> 
+        <br>
+        <br> {{/if}}
+        {{#if image_02}} <img src="{{this.image_02}}" width="600"> 
+        <br>
+        <br> {{/if}}
+        {{#if image_03}} <img src="{{this.image_03}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_04}} <img src="{{this.image_04}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_05}} <img src="{{this.image_05}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_06}} <img src="{{this.image_06}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_07}} <img src="{{this.image_07}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_08}} <img src="{{this.image_08}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_09}} <img src="{{this.image_09}}" width="600"> 
+        <br>
+        <br> {{/if}}
+        {{#if image_10}} <img src="{{this.image_11}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_11}} <img src="{{this.image_12}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_12}} <img src="{{this.image_13}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_13}} <img src="{{this.image_14}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_14}} <img src="{{this.image_15}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_15}} <img src="{{this.image_16}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_16}} <img src="{{this.image_17}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_17}} <img src="{{this.image_18}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_18}} <img src="{{this.image_19}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_19}} <img src="{{this.image_20}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_20}} <img src="{{this.image_10}}" width="600">
+        <br>
+        <br>  {{/if}}
+
+        
+        <nav class="credits">
+        {{#if creditPers}}<p> Crédit perspectives : {{this.creditPers}}</p>{{/if}}
+        {{#if creditPhoto}}<p> Crédit photos : {{this.creditPhoto}}</p>{{/if}}
+       </nav>
+
+                
+      </section>
+          
+
+          
+          
+      
+          
+          
+          
+      </main>
+      
+    
+    
+    
+    
+    
+    <br>
+    <br>
+    <br>
+
+    <footer>
+    Contact : alexandresuteauarchitecte@gmail.com
+    </footer>
+          
+</section>
+      {{/each}}
+</script>
+  </head>
+
+  <body>
+ 
+      <section id="informations">
+      </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+

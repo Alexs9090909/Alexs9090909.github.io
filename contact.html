@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title> <!-- REMPLACER -->
+    <link href="style.css" rel="stylesheet" />
+    <script src="handlebars.min.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template"> 
+
+      <nav>
+        <a href="./home.html">Home</a>
+        <a href="./index_projets.html">Projets</a>
+        <a href="./bim.html">BIM</a>
+        <a href="./contact.html">Contact</a> 
+      </nav>
+
+      {{#each contact}} <!-- REMPLACER -->
+
+
+        <header>
+          <h1>{{this.shortName}}</h1>
+        </header>
+
+        <br>
+
+        <main>
+          <div class="contact-container">
+            <div class='contact-illustration'>
+            <img src="{{this.image_00}}">
+            </div>
+            <div class="contact-info">
+            <p>contact : <br>
+            alexandresuteauarchitecte@gmail.com</p>
+            </div>
+            <form> </form>
+          </div>
+        </main>
+          <br>    
+      <br>
+          
+      <section class='galerie'> 
+        {{#if image_01}} <img src="{{this.image_01}}" width="600"> 
+        <br>
+        <br> {{/if}}
+        {{#if image_02}} <img src="{{this.image_02}}" width="600"> 
+        <br>
+        <br> {{/if}}
+        {{#if image_03}} <img src="{{this.image_03}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_04}} <img src="{{this.image_04}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_05}} <img src="{{this.image_05}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_06}} <img src="{{this.image_06}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_07}} <img src="{{this.image_07}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_08}} <img src="{{this.image_08}}" width="600">
+        <br>
+        <br> {{/if}}
+        {{#if image_09}} <img src="{{this.image_09}}" width="600"> 
+        <br>
+        <br> {{/if}}
+        {{#if image_10}} <img src="{{this.image_11}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_11}} <img src="{{this.image_12}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_12}} <img src="{{this.image_13}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_13}} <img src="{{this.image_14}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_14}} <img src="{{this.image_15}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_15}} <img src="{{this.image_16}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_16}} <img src="{{this.image_17}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_17}} <img src="{{this.image_18}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_18}} <img src="{{this.image_19}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_19}} <img src="{{this.image_20}}" width="600">
+        <br>
+        <br>  {{/if}}
+        {{#if image_20}} <img src="{{this.image_10}}" width="600">
+        <br>
+        <br>  {{/if}}
+
+        
+        <nav class="credits">
+        {{#if creditPers}}<p> Crédit perspectives : {{this.creditPers}}</p>{{/if}}
+        {{#if creditPhoto}}<p> Crédit photos : {{this.creditPhoto}}</p>{{/if}}
+        </nav>
+                
+      </section>
+      
+          
+      </main>
+          
+    
+    <br>
+    <br>
+    <br>
+          
+</section>
+      {{/each}}
+</script>
+  </head>
+
+  <body>
+ 
+      <section id="informations">
+      </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
