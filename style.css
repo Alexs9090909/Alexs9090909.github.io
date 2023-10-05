@@ -1,0 +1,262 @@
+/*règles pour la page de projet index / home */
+
+* {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* background-color: whitesmoke; */
+}
+
+body{
+    max-width: 800px;
+    margin: auto;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: left;
+    width: 100%;
+    margin: 0 0 1% 0;
+    padding: 0 18%;
+    height: 2%;
+}
+
+a {
+    margin: 0 5% 0 0;
+    font-style: normal;
+    color: rgb(10 10 10);
+}
+
+header {
+    display: inline-flex;
+    justify-content: left;
+    /* background-color: rgb(230 230 230); */
+    width: 100%;
+    max-width: 550px;
+    margin: 0 0 1% 0;
+    padding: 0 18%;
+    height: 2%;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.projects-lines {
+    display: inline-flex;
+    justify-content: center;
+    /* background-color: rgb(230 230 230);*/
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+}
+
+.project-boxes {
+    width: 20%;
+    height: ;
+    /* background-color: green;*/
+    margin: 1%;
+    text-align: center;
+    font-size: 1rem;
+    overflow: hidden;
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-property: opacity;
+    transition-duration: 2s;
+}
+
+.project-boxes:hover {
+    opacity: 0.8;
+}
+
+.project-boxes p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: left;
+    background-color: white;
+    float: left;
+    width: 80%;
+    margin: 2%;
+    font-size: x-small;
+    display:none;
+}
+
+.pTitle {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 0.7rem;
+}
+
+.project-boxes:hover p {
+    display: block;
+}
+
+#duc {
+    background-image: url(./img/duc/00.jpeg);
+}
+
+#pdm2B {
+    background-image: url(img/pdm2B/00.jpeg);
+}
+
+#pdm2D2 {
+    background-image: url(img/pdm2D2/00.jpeg);
+}
+
+#charenton {
+    background-image: url(img/cha/0130_CHA_COM_JPG_PER1.jpg);
+}
+
+#chanteloup {
+    background-image: url(img/lou/0141_LOU_COM_PERS\ PARC\ BLANC_5MO.jpg);
+}
+
+#danton {
+    background-image: url(img/dan/HARVEY-HAVRE_V03_2.jpg);
+}
+
+#bussy {
+    background-image: url(img/bus/0128_BUS_COM_JPG_PER_PARVIS.jpg);
+}
+
+#drancy {
+    background-image: url(img/dra/0062_DRA_COM_PHOTO_26_LDD.jpg);
+}
+
+#strasbourg {
+    background-image: url(img/str/0122_BAN_COM_JPG_PER_EXT\ RUE.jpg);
+}
+
+footer {
+    font-family:;
+    font-size: 12px;
+    border-top: 1px ridge lightgray;
+    color: lightgray;
+    display: inline-flex;
+    justify-content: center;
+    width: 63.5%;
+    margin: 2% 99% 0 18%;
+    padding: 1% 0 1% 0;
+    height: 2%;
+}
+
+/* Pages de projet individuelles */
+
+/*
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: ;
+    font-weight: lighter;
+}
+*/
+
+img {
+
+    display: inline-flex;
+    justify-content: left;
+    width: 100%;
+    height: auto;
+    margin: 0 0 1% 0;
+    padding: 0 18%;
+}
+
+.project-properties {
+    justify-content: left;
+    margin: 0 0 1% 0;
+    padding: 0 18%;
+}
+
+.project-properties li {
+    font-family: 'courier new';
+    list-style: none;
+    font-size: 0.85rem; 
+    line-height: 120%;
+    color: grey;
+    opacity: 0.7;
+    text-align: left;
+}
+
+
+.description {
+    justify-content: left;
+    margin: 0 0 1% 0;
+    padding: 0 18%;
+}
+
+.description p {
+    font-family: 'courier new';
+    font-size: 0.85rem; 
+    line-height: 120%;
+    color: black;
+    text-align: left;
+}
+
+.taches {
+    font-family: 'courier new';
+    justify-content: left;
+    margin: 0 0 1% 0;
+    padding: 0 18%;
+}
+
+.taches p {
+    font-family: 'courier new';
+    font-size: 0.85rem; 
+    line-height: 120%;
+    color: grey;
+    opacity: 0.7;
+    text-align: left;
+}
+
+.taches li {
+   font-family: 'courier new';
+    list-style-type: "- ";
+    font-size: 0.85rem; 
+    color: grey;
+    opacity: 0.7;
+    text-align: left;
+}
+
+.credits {
+    justify-content: center;
+    margin: 0 0 1% 0;
+    padding: 0 18%;
+}
+
+.credits p {
+    font-family: 'courier new';
+    font-size: 0.65rem; 
+    line-height: 120%;
+    color: black;
+    opacity: 0.3;
+    text-align: center;
+}
+
+/* Page contact */
+
+
+.contact-container {
+    width: 100%;
+    padding: 2% 13%;
+    display: inline-flex;
+    justify-content: left;
+    align-content: center;
+}
+
+.contact-illustration {
+    width: 40%;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7rem;
+    align-items: center;
+}

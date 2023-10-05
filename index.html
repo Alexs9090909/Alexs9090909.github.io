@@ -1,1 +1,94 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Projets</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="handlebars.min.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template"> 
+        <nav>
+          <a href="./home.html">Home</a>
+          <a href="./index_projets.html">Projets</a>
+          <a href="./bim.html">BIM</a>
+          <a href="./contact.html">Contact</a> 
+        </nav>
+        <header>
+          <h1>Projets</h1>
+        </header>
+        <main>
+            <div class='projects-lines'>
+                <a class='project-boxes' id="duc" href="./project_duc.html">
+                  <p><span class="pTitle">{{duc.[0].shortName}}</span>
+                  <br> Prog : {{duc.[0].programme}} 
+                  <br> Agence : {{duc.[0].agence}}</p>              
+                </a>
+                <a class='project-boxes' id="pdm2B" href="./project_pdm2B.html">
+                  <p><span class="pTitle">{{pdm2B.[0].shortName}}</span><br>{{pdm2B.[0].programme}}</p>
+                </a>
+                <a class='project-boxes' id="pdm2D2" href="./project_pdm2D2.html">
+                  <p><span class="pTitle">{{pdm2D2.[0].shortName}}</span><br>{{pdm2D2.[0].programme}}</p>
+                </a>
+            </div>
+              <div class='projects-lines'>
+                <a class='project-boxes' id="charenton" href="./project_cha.html">
+                  <p><span class="pTitle">{{charenton.[0].shortName}}</span><br>{{charenton.[0].programme}}</p>
+                </a>
+                <a class='project-boxes' id="chanteloup" href="./project_lou.html">
+                  <p><span class="pTitle">{{chanteloup.[0].shortName}}</span><br>{{chanteloup.[0].programme}}</p>
+                </a>
+                <a class='project-boxes' id="danton" href="./project_dan.html">
+                  <p><span class="pTitle">{{danton.[0].shortName}}</span><br>{{danton.[0].programme}}</p>
+                </a>
+              </div>
+              <div class='projects-lines'>
+                <a class='project-boxes' id="bussy" href="./project_bus.html">
+                  <p><span class="pTitle">{{bussy.[0].shortName}}</span><br>{{bussy.[0].programme}}</p>
+                </a>
+                <a class='project-boxes' id="drancy" href="./project_dra.html">
+                  <p><span class="pTitle">{{drancy.[0].shortName}}</span><br>{{drancy.[0].programme}}</p>
+                </a>
+                <a class='project-boxes' id="strasbourg" href="./project_str.html">
+                  <p><span class="pTitle">{{strasbourg.[0].shortName}}</span><br>{{strasbourg.[0].programme}}</p>
+                </a>
+              </div>
+              <div class='projects-lines'>
+                <div class='project-boxes' id="XXX">
+                  <a>XXX</a>
+                </div>
+                <div class='project-boxes' id="XXX">
+                  <a>XXX</a>
+                </div>
+                <div class='project-boxes' id="XXX">
+                  <a>XXX</a>
+                </div>
+              </div>
+              <div class='projects-lines'>
+                <div class='project-boxes' id="XXX">
+                  <a>XXX</a>
+                </div>
+                <div class='project-boxes' id="XXX">
+                  <a>XXX</a>
+                </div>
+                <div class='project-boxes' id="XXX">
+                  <a>XXX</a>
+                </div>
+              </div>
+        </main>
+        <footer>
+          Contact : alexandresuteauarchitecte@gmail.com
+        </footer>
+</script>
+  </head>
+
+  <body>
+    <h1>TEST HELLOXXX</h1>
+      <section id="informations">
+      </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+
